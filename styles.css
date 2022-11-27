@@ -1,0 +1,278 @@
+/* SETUP */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #CB3327;
+  font-family: sofia-pro, sans-serif;
+  color: #fff;
+}
+/* END SETUP */
+
+/* FONT STYLES */
+section.loading-page h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 75px;
+  animation: 2s fade-out 8s 1 forwards, 2s hid 11s 1 forwards;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+/* END FONT STYLES */
+
+/* START MOBILE NAVIGATION */
+div.mobile-nav-container {
+  background-color: #232323;
+  padding: 4% 5% 4% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  filter: drop-shadow(0 0 0.5rem #232323);
+  position: fixed;
+  top: 0;
+  width: 90vw;
+}
+img.mobile-logo {
+  max-width: 70vw;
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #232323; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* END MOBILE NAVIGATION */
+
+/* START HOMEPAGE CSS */
+div.call-to-action {
+  height: 80vh;
+  margin: 50px 15px 0 15px;
+  background-image: url(images/red-field.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img.flame-homepage {
+  width: 50px;
+  padding-bottom: 15px;
+}
+a.black-button {
+  color: #fff;
+  margin-top: 20px;
+  background-color: #232323;
+  padding: 15px 20px 15px 20px;
+  text-decoration: none;
+}
+/* END HOMEPAGE CSS */
+
+/* LOADING MATCH */
+img.flame {
+  width: 75px;
+  padding-bottom: 15px;
+}
+div.match-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow-y: hidden;
+  margin-left: -37.5px;
+  animation: 2s fade-out 8s 1 forwards, 2s hid 11s 1 forwards;
+}
+div.match {
+  background-color: #A43327;
+  height: 275px;
+  width: 20px;
+  margin: 0 auto;
+}
+div.loaded-match {
+  background-color: #FFE697;
+  height: 275px;
+  width: 20px;
+  margin: 0 auto;
+  animation-name: loading-match;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  position: relative;
+  bottom: 0px;
+}
+/* END LOADING MATCH */
+
+/* CHEVRON LOADING BACKGROUND */
+.triangle-black {
+  width: 0;
+  height: 0;
+  border: 50vw solid transparent;
+  border-top: 0;
+  border-bottom: 50px solid #232323;
+  position: absolute;
+  bottom: 75px;
+  z-index: -99;
+}
+.triangle-red-1 {
+  width: 0;
+  height: 0;
+  border: 50vw solid transparent;
+  border-top: 0;
+  border-bottom: 50px solid #561B15;
+  position: absolute;
+  bottom: 100px;
+  z-index: -101;
+}
+.triangle-red-2 {
+  width: 0;
+  height: 0;
+  border: 50vw solid transparent;
+  border-top: 0;
+  border-bottom: 50px solid #83291F;
+  position: absolute;
+  bottom: 125px;
+  z-index: -103;
+}
+.triangle-red-3 {
+  width: 0;
+  height: 0;
+  border: 50vw solid transparent;
+  border-top: 0;
+  border-bottom: 50px solid #A43327;
+  position: absolute;
+  bottom: 150px;
+  z-index: -105;
+}
+.rectangle-black {
+  width: 100vw;
+  height: 75px;
+  background-color: #232323;
+  position: absolute;
+  bottom: 0px;
+  z-index: -100;
+}
+.rectangle-red-1 {
+  width: 100vw;
+  height: 100px;
+  background-color: #561B15;
+  position: absolute;
+  bottom: 0px;
+  z-index: -102;
+}
+.rectangle-red-2 {
+  width: 100vw;
+  height: 125px;
+  background-color: #83291F;
+  position: absolute;
+  bottom: 0px;
+  z-index: -104;
+}
+.rectangle-red-3 {
+  width: 100vw;
+  height: 150px;
+  background-color: #A43327;
+  position: absolute;
+  bottom: 0px;
+  z-index: -106;
+}
+/* END CHEVRON LOADING BACKGROUND */
+
+/* START CHEVRON FOOTER BACKGROUND */
+div.chevron {
+  margin-top: -50px;
+  height: 130px;
+  background-image: url(images/chevron.png);
+  background-position: bottom;
+  background-size: cover;
+}
+div.black-background {
+  background-color: #232323;
+  padding: 30px 40px 20px 40px;
+}
+img.logo-footer {
+  width: 100%;
+  margin-bottom: 15px;
+}
+a.yellow-link {
+  color: #FFE697;
+}
+div.border-top {
+  background-color: #232323;
+  text-align: center;
+  padding: 20px 20px;
+  border-top: 1px solid #000;
+}
+/* END CHEVRON FOOTER BACKGROUND */
+
+/* KEYFRAMES */
+@keyframes loading-match {
+  0% {bottom: 0px}
+  100% {bottom: -275px}
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes hid {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+/* END KEYFRAMES */
