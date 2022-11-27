@@ -333,6 +333,30 @@ div.flex-row {
 }
 /* END LEGENDS PAGE CSS */
 
+/* START QUIZ PAGE */
+div#quiz h2.result {
+  text-transform: inherit;
+}
+div#quiz {
+  margin-bottom: 40px;
+}
+button {
+  background-color: #232323;
+  border: none;
+  color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+div.button-grp {
+  display: flex;
+  flex-direction: column;
+}
+p#question {
+  font-size: 20px;
+  font-weight: 600;
+}
+/* END QUIZ PAGE */
+
 /* LOADING MATCH */
 img.flame {
   width: 75px;
