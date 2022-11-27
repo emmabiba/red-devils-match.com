@@ -56,7 +56,7 @@ img.mobile-logo {
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 0px 20px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #fff;
@@ -73,7 +73,7 @@ img.mobile-logo {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 0;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -103,6 +103,7 @@ div.call-to-action {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 img.flame-homepage {
   width: 50px;
@@ -116,6 +117,221 @@ a.black-button {
   text-decoration: none;
 }
 /* END HOMEPAGE CSS */
+
+/* START ABOUT PAGE CSS */
+div.margin-top {
+  text-align: center;
+  margin: 100px 25px 0 25px;
+}
+
+div.margin-top h1{
+  margin-bottom: 20px;
+}
+
+div.margin-top p{
+  margin-bottom: 40px;
+}
+
+div.margin-top h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+div.social-links a{
+  color: #fff;
+  margin: 0px 9px 0px 9px;
+  font-size: 25px;
+}
+
+div.social-links a:hover{
+  color: #232323;
+}
+
+div.social-links {
+  margin-bottom: 40px;
+}
+/* END ABOUT PAGE CSS */
+
+/* START HISTORY PAGE CSS */
+.timeline:before {
+  content: '';
+  position:absolute;
+  height:100%;
+  left:50%;
+  width:2px;
+  top:-20px;
+  background:#000;
+  z-index:-1;
+}
+.timeline{
+  position:relative;
+  margin: 50px auto;
+  width:1000px;
+  padding:50px 0;
+  z-index: -2;
+}
+
+
+.timeline ul{
+  margin:0;
+  padding:0 ;
+}
+
+.timeline ul li{
+  list-style:none;
+  box-sizing:border-box;
+  line-height:normal;
+  position:relative;
+  width:50%;
+  padding: 10px 40px 60px 70px;
+}
+
+.timeline ul li .right_content h2{
+  color:#fff;
+  padding:0px 2px 18px 0px;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+
+.left_content{
+  padding-bottom:20px;
+}
+
+.timeline ul li:nth-child(odd):before{
+  content: '';
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:#fff;
+  border-radius:50%;
+  /* box-shadow: 0 0 0 3px rgba(58,112,239,0.2); */
+  right:-6px;
+  top:24px;
+  z-index:-1;
+}
+
+.timeline ul li:nth-child(even):before{
+  content: '';
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:#fff;
+  border-radius:50%;
+  /* box-shadow: 0 0 0 3px rgba(58,112,239,0.2); */
+  left:-6px;
+  top:24px;
+}
+
+.timeline ul li:nth-child(odd) .left_content{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  color:#fff;
+}
+
+.timeline ul li:nth-child(even) .left_content{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  margin:0;
+  color:#fff;
+}
+
+
+@media (max-width: 1000px){
+  .timeline{
+    width:100%;
+  }
+}
+
+@media (max-width: 767px){
+  .timeline{
+    width:100%;
+  }
+  .timeline:before{
+    left:20px;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even){
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+  }
+
+  .timeline ul li:nth-child(odd):before
+    {
+    top:-18px;
+    left:16px;
+  }
+  .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+
+  .timeline ul li:nth-child(odd) .left_content,
+  .timeline ul li:nth-child(even) .left_content
+  {
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+
+}
+/* END HISTORY PAGE CSS */
+
+/* START LEGENDS PAGE CSS */
+div.roster {
+  text-align: left;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+div.position {
+  margin-bottom: 35px;
+}
+hr.position-header {
+  margin-bottom: 20px;
+}
+div.roster table {
+  width: 100%;
+}
+div.roster td, div.roster th {
+  padding: 3px 0;
+}
+.right-align {
+  text-align: right;
+}
+table td:nth-child(2), table th:nth-child(2) {
+  display: none;
+}
+div.quick-links a{
+  color:#fff;
+  text-decoration: none;
+}
+div.quick-links {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+div.quick-links p{
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+div.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* END LEGENDS PAGE CSS */
 
 /* LOADING MATCH */
 img.flame {
@@ -251,7 +467,7 @@ a.yellow-link {
 div.border-top {
   background-color: #232323;
   text-align: center;
-  padding: 20px 20px;
+  padding: 20px 20px 30px 20px;
   border-top: 1px solid #000;
 }
 /* END CHEVRON FOOTER BACKGROUND */
