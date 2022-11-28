@@ -338,7 +338,7 @@ div.flex-row {
 /* END LEGENDS PAGE CSS */
 
 /* START QUIZ PAGE */
-div#quiz h2.result {
+div#quiz h2#section-1 {
   text-transform: inherit;
 }
 div#quiz {
@@ -351,13 +351,18 @@ button {
   padding: 15px 20px;
   margin-bottom: 15px;
 }
-div.button-grp {
+div#section-2 {
   display: flex;
   flex-direction: column;
 }
-p#question {
+p#section-1 {
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#section-2 a{
+  color: #FFE697;
 }
 /* END QUIZ PAGE */
 
