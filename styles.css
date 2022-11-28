@@ -40,6 +40,10 @@ div.mobile-nav-container {
 img.mobile-logo {
   max-width: 70vw;
 }
+div.mobile-nav-container a{
+  height: inherit;
+  margin-top: 10px;
+}
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -165,9 +169,9 @@ div.social-links {
 }
 .timeline{
   position:relative;
-  margin: 50px auto;
+  margin: 0px auto;
   width:1000px;
-  padding:50px 0;
+  padding: 50px 0 10px 0;
   z-index: -2;
 }
 
@@ -491,7 +495,7 @@ a.yellow-link {
 div.border-top {
   background-color: #232323;
   text-align: center;
-  padding: 20px 20px 30px 20px;
+  padding: 20px 40px 30px 40px;
   border-top: 1px solid #000;
 }
 /* END CHEVRON FOOTER BACKGROUND */
