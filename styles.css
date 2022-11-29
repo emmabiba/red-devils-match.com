@@ -343,6 +343,10 @@ div#quiz h2#section-1 {
 }
 div#quiz {
   margin-bottom: 40px;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 button {
   background-color: #232323;
