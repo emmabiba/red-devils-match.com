@@ -40,6 +40,24 @@ const defenderChoices1 = {
   choice2: "Republic of Ireland"
 }
 
+const defender2 = {
+  question: "Which would you prefer to be?"
+}
+
+const defenderChoices2 = {
+  choice1: "TV Pundit",
+  choice2: "Coach"
+}
+
+const defender3 = {
+  question: "Choose a teammate.."
+}
+
+const defenderChoices3 = {
+  choice1: "Edwin van der Sar",
+  choice2: "Steve Bruce"
+}
+
 //Midfielders
 
 const midfielder = {
@@ -163,7 +181,7 @@ function populate() {
 
       //show choices
       var buttonGroup = document.getElementById('section-2');
-      buttonGroup.innerHTML = "<button type='button' onclick='defenderFullbackCountry()'>" + defenderChoices.choice1 + "</button>" + "<button type='button' onclick=''>" + defenderChoices.choice2 + "</button>";
+      buttonGroup.innerHTML = "<button type='button' onclick='defenderFullbackCountry()'>" + defenderChoices.choice1 + "</button>" + "<button type='button' onclick='defenderProfession()'>" + defenderChoices.choice2 + "</button>";
     }
 
     function defenderFullbackCountry() {
@@ -173,6 +191,26 @@ function populate() {
       //show choices
       var buttonGroup = document.getElementById('section-2');
       buttonGroup.innerHTML = "<button type='button' onclick='neville()'>" + defenderChoices1.choice1 + "</button>" + "<button type='button' onclick='irwin()'>" + defenderChoices1.choice2 + "</button>";
+    }
+
+    function defenderProfession() {
+      //show question
+      var element = document.getElementById('section-1');
+  		element.innerHTML = defender2.question;
+
+      //show choices
+      var buttonGroup = document.getElementById('section-2');
+      buttonGroup.innerHTML = "<button type='button' onclick='defenderTeammate()'>" + defenderChoices2.choice1 + "</button>" + "<button type='button' onclick='bruce()'>" + defenderChoices2.choice2 + "</button>";
+    }
+
+    function defenderTeammate() {
+      //show question
+      var element = document.getElementById('section-1');
+  		element.innerHTML = defender3.question;
+
+      //show choices
+      var buttonGroup = document.getElementById('section-2');
+      buttonGroup.innerHTML = "<button type='button' onclick='ferdinand()'>" + defenderChoices3.choice1 + "</button>" + "<button type='button' onclick='pallister()'>" + defenderChoices3.choice2 + "</button>";
     }
 
     function forwardCountry() {
@@ -297,6 +335,30 @@ function populate() {
 
     var resultPlayer = document.getElementById('section-2');
     resultPlayer.innerHTML = "<p>Cristiano Ronaldo</p>" + "<a href='quiz.html'>Retake the Quiz</a>";
+  }
+
+  function bruce() {
+    var element = document.getElementById('section-1');
+    element.innerHTML = result.heading;
+
+    var resultPlayer = document.getElementById('section-2');
+    resultPlayer.innerHTML = "<p>Steve Bruce</p>" + "<a href='quiz.html'>Retake the Quiz</a>";
+  }
+
+  function pallister() {
+    var element = document.getElementById('section-1');
+    element.innerHTML = result.heading;
+
+    var resultPlayer = document.getElementById('section-2');
+    resultPlayer.innerHTML = "<p>Gary Pallister</p>" + "<a href='quiz.html'>Retake the Quiz</a>";
+  }
+
+  function ferdinand() {
+    var element = document.getElementById('section-1');
+    element.innerHTML = result.heading;
+
+    var resultPlayer = document.getElementById('section-2');
+    resultPlayer.innerHTML = "<p>Rio Ferdinand</p>" + "<a href='quiz.html'>Retake the Quiz</a>";
   }
 
 
